@@ -24,3 +24,12 @@
 .text {
   float: center;
 }
+#bildet {
+  width: 100%;
+}
+.partnerPicture {
+  width: 100%;
+}
+#more {
+  display: none;
+}
