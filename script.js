@@ -18,3 +18,9 @@ $(document).ready(function() {
     $("p").toggle();
   });
 });
+
+$(document).ready(function() {
+  $("button").click(function() {
+    $("p").slideToggle();
+  });
+});
