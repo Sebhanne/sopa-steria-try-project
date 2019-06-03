@@ -1,26 +1,14 @@
-function myFunction() {
-  var plus = document.getElementById("plus");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("+");
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-  if (plus.style.display === "none") {
-    plus.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    plus.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
 }
-$(document).ready(function() {
-  $("button").click(function() {
-    $("p").toggle();
-  });
-});
-
-$(document).ready(function() {
-  $("button").click(function() {
-    $("p").slideToggle();
-  });
-});

@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "sebhanne"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Guru99. <guru99@gmail.com> (http://Guru99.com)",
+  "license": "ISC"
+}
